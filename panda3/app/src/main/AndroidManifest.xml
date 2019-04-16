@@ -11,12 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".NotesActivity"></activity>
-        <activity android:name=".TasksActivity" />
-        <activity android:name=".InfoActivity" />
+
+        <activity android:name=".NotesActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".TasksActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".InfoActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".AboutActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
