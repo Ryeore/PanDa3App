@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">panda3</string>
+    <string name="about">about</string>
+    <string name="calendar">calendar</string>
+    <string name="notes">notes</string>
+    <string name="tasks">tasks</string>
 </resources>
