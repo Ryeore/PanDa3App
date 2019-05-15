@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_calendar:
-                startActivity(new Intent(MainActivity.this, InfoActivity.class));
+                startActivity(new Intent(MainActivity.this, TasksActivity.class));
                 return true;
 
             case R.id.action_about:
