@@ -38,11 +38,6 @@ public class InfoActivity extends AppCompatActivity {
                 startActivity(new Intent(InfoActivity.this, InfoActivity.class));
                 return true;
 
-            case R.id.action_tasks:
-                finish();
-                startActivity(new Intent(InfoActivity.this, TasksActivity.class));
-                return true;
-
             case R.id.action_about:
                 finish();
                 startActivity(new Intent(InfoActivity.this, AboutActivity.class));
