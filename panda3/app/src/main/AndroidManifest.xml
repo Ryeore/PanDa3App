@@ -12,6 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+
         <activity android:name=".NotesActivity"
             android:screenOrientation="portrait"/>
 

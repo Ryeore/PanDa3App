@@ -7,61 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:textSize="50sp"
-        android:text="Panda 3" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="100dp">
-
-        <ImageButton
-            android:id="@+id/About"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            app:srcCompat="@drawable/calendar" />
-
-        <ImageButton
-            android:id="@+id/Info"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            app:srcCompat="@drawable/info" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="350dp">
-
-    <ImageButton
-        android:id="@+id/Tasks"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@android:color/white"
-        app:srcCompat="@drawable/tasks"/>
-
-        <ImageButton
-            android:id="@+id/Notes"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            app:srcCompat="@drawable/notes"/>
+        app:srcCompat="@drawable/mainph"
+        android:layout_centerInParent="true"/>
 
 
-    </LinearLayout>
 </RelativeLayout>
