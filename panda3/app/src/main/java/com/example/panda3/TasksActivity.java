@@ -55,13 +55,4 @@ public class TasksActivity extends AppCompatActivity {
         }
     }
 
-    private void configureBackButton() {
-        Button Back = (Button) findViewById(R.id.Back);
-        Back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-    }
 }

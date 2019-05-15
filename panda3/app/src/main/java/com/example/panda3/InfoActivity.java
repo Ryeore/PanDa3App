@@ -19,7 +19,6 @@ public class InfoActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        configureBackButton();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,14 +55,5 @@ public class InfoActivity extends AppCompatActivity {
 
         }
     }
-
-    private void configureBackButton(){
-        Button Back = (Button) findViewById(R.id.Back);
-        Back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-    }
+    
 }
