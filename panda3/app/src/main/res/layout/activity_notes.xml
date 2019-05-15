@@ -17,13 +17,39 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Notes" />
+        android:layout_alignTop="@+id/my_toolbar"
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="go to date"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btnGoToTasks"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:text="go to date"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:text="add task"
+        android:textSize="30sp"/>
+
 
     <!--<Button
         android:id="@+id/Back"
