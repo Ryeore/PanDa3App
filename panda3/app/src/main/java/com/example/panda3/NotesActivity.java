@@ -38,11 +38,6 @@ public class NotesActivity extends AppCompatActivity {
                 startActivity(new Intent(NotesActivity.this, InfoActivity.class));
                 return true;
 
-            case R.id.action_tasks:
-                finish();
-                startActivity(new Intent(NotesActivity.this, TasksActivity.class));
-                return true;
-
             case R.id.action_about:
                 finish();
                 startActivity(new Intent(NotesActivity.this, AboutActivity.class));
