@@ -34,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
 
             case R.id.action_calendar:
                 finish();
-                startActivity(new Intent(AboutActivity.this, InfoActivity.class));
+                startActivity(new Intent(AboutActivity.this, TasksActivity.class));
                 return true;
 
             case R.id.action_about:
