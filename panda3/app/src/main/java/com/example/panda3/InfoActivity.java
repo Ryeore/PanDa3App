@@ -35,7 +35,7 @@ public class InfoActivity extends AppCompatActivity {
 
             case R.id.action_calendar:
                 finish();
-                startActivity(new Intent(InfoActivity.this, InfoActivity.class));
+                startActivity(new Intent(InfoActivity.this, TasksActivity.class));
                 return true;
 
             case R.id.action_about:
