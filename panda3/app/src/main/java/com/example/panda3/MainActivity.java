@@ -38,10 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, InfoActivity.class));
                 return true;
 
-            case R.id.action_tasks:
-                startActivity(new Intent(MainActivity.this, TasksActivity.class));
-                return true;
-
             case R.id.action_about:
                 startActivity(new Intent(MainActivity.this, AboutActivity.class));
                 return true;
