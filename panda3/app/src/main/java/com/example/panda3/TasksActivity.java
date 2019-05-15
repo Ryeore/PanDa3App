@@ -8,8 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
+import android.util.Log;
 
 public class TasksActivity extends AppCompatActivity {
+    private static final  String TAG = "TasksActivity";
+    private CalendarView mCalendarView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,22 @@ public class TasksActivity extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+
+        mCalendarView = (CalendarView) findViewById(R.id.simpleCalendarView);
+
+        mCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
+                String date = year + "/" + (month+1) + "/" + dayOfMonth;
+                Log.d(TAG, "onSelectDayChange: date: " + date);
+                finish();
+                Intent intent = new Intent(TasksActivity.this, NotesActivity.class);
+                intent.putExtra("date", date);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -34,7 +54,7 @@ public class TasksActivity extends AppCompatActivity {
 
             case R.id.action_calendar:
                 finish();
-                startActivity(new Intent(TasksActivity.this, InfoActivity.class));
+                startActivity(new Intent(TasksActivity.this, TasksActivity.class));
                 return true;
 
             case R.id.action_about:
