@@ -11,18 +11,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
     public static final String TAG = "DatabaseHelper";
     public static final int DATABASE_VERSION = 1;
-    public static final String TABLE_NAME = "tasks_table";
+    public static final String TABLE_NAME = "task_table";
 
     public static final String COL1 = "ID";
-    public static final String COL2 = "taks_name";
-    public static final String COL3 = "date";
+    public static final String COL2 = "col2";
+    public static final String COL3 = "col3";
 
     public DatabaseHelper(Context context) {
         super(context, TABLE_NAME, null, DATABASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String SQL_CREATE_ENTRIES = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + "DATE)";
+        String SQL_CREATE_ENTRIES = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT)";
         db.execSQL(SQL_CREATE_ENTRIES);
     }
     @Override
@@ -40,7 +40,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL2, item1);
         contentValues.put(COL3, item2);
 
-        Log.d(TAG, "addData: Adding " + item1 + ", " + item2 + " to " + TABLE_NAME);
+        Log.d(TAG, "addData: Adding " + contentValues + " to " + TABLE_NAME);
 
         long result = db.insert(TABLE_NAME, null, contentValues);
 
