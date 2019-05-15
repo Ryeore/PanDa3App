@@ -16,6 +16,7 @@
         <activity android:name=".NotesActivity"
             android:screenOrientation="portrait"/>
 
+
         <activity android:name=".TasksActivity"
             android:screenOrientation="portrait"/>
 
@@ -24,6 +25,9 @@
 
         <activity
             android:name=".AboutActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".AddTaskActivity"
             android:screenOrientation="portrait"/>
 
         <activity
