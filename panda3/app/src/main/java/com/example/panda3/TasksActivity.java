@@ -37,11 +37,6 @@ public class TasksActivity extends AppCompatActivity {
                 startActivity(new Intent(TasksActivity.this, InfoActivity.class));
                 return true;
 
-            case R.id.action_tasks:
-                finish();
-                startActivity(new Intent(TasksActivity.this, TasksActivity.class));
-                return true;
-
             case R.id.action_about:
                 finish();
                 startActivity(new Intent(TasksActivity.this, AboutActivity.class));
