@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TasksActivity">
+    tools:context=".AboutActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -16,21 +15,13 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-<<<<<<< HEAD
-    <CalendarView
-        android:id="@+id/simpleCalendarView"
-        android:layout_marginTop="60dp"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
-
-=======
     <TextView
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Tasks" />
+        android:text="About" />
 
     <Button
         android:id="@+id/Back"
@@ -42,6 +33,5 @@
         android:layout_alignParentTop="true"
         android:text="back"
         android:textSize="30sp"/>
->>>>>>> 7b3d118b090d8d32a8809933f942bf07702edb0e
 
 </RelativeLayout>
