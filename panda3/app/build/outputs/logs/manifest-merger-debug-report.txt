@@ -1,0 +1,196 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\da22f669f9041e94b6b5c052641366af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\fb888fabff00677bcce6e9f6b0248afd\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3c72d742c45341ca04f91908a33cd870\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ef0c7f383b509b1f5b31397ceb4a0a1f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\db53b6aab1640af663bb145b822cff01\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\0c5725f72867756175e106f8298d1181\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\2a5747584c177167a1befa9050b66c79\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\3e6d56c7bb503e54cb03edaab5c208cd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\44a198b3a4c2efb79fc6273b38b6a465\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\611260751ce38ab335c2afcf4d034098\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\24be08254a4cc7bbcd2ff1de0879b89e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9fb39fc0cbb819d47bc8189d879d2952\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\df47f85da6cd82fab69e610be5b91b47\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2edd13c690772f1f07309ca3717b39e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\3c156871fc80e2968f1f7d8f3e623718\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3f81782382eba75562de16c73c67c60a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ab6f53fb085f1a3bb3bd86ffab3e5150\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\c21a3218199d3bfd8d7003a2abaf4fe3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8a7cf2916ffec308413e5bc64d884e08\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\74a19ace81a6fa3c2fad4a5a796897c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\26abd52edf25ae03d0725cd205c84902\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\639b7e905ce6e21767354feb6bc1ede1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\554b60186644a9ec6d1ec4e7a979cf80\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\88b152fb9a89c2a00c26acd2b954fa4e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\b8c668b1025dcc669f80de56344a17b7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\63558db2ccfc67e7bdc3345d186c4c5a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\bd255502517b39fa10f1277174f769bd\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:4:5-33
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:1-47:12
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:6:5-45:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\fb888fabff00677bcce6e9f6b0248afd\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\fb888fabff00677bcce6e9f6b0248afd\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3f81782382eba75562de16c73c67c60a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3f81782382eba75562de16c73c67c60a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ab6f53fb085f1a3bb3bd86ffab3e5150\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ab6f53fb085f1a3bb3bd86ffab3e5150\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3f81782382eba75562de16c73c67c60a\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:9:9-41
+	tools:ignore
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:13:9-48
+	android:roundIcon
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:10:9-54
+	android:icon
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:12:9-40
+activity#com.example.panda3.NotesActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:16:9-17:51
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:17:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:16:19-48
+activity#com.example.panda3.TasksActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:20:9-21:51
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:21:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:20:19-48
+activity#com.example.panda3.InfoActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:23:9-24:51
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:24:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:23:19-47
+activity#com.example.panda3.AboutActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:26:9-28:51
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:27:13-42
+activity#com.example.panda3.AddTaskActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:30:9-31:51
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:31:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:30:19-50
+activity#com.example.panda3.EditTaskActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:33:9-34:51
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:34:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:33:19-51
+activity#com.example.panda3.MainActivity
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:36:9-44:20
+	android:screenOrientation
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:37:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:39:13-43:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml:42:27-74
+uses-sdk
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\da22f669f9041e94b6b5c052641366af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\da22f669f9041e94b6b5c052641366af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\fb888fabff00677bcce6e9f6b0248afd\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\fb888fabff00677bcce6e9f6b0248afd\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3c72d742c45341ca04f91908a33cd870\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3c72d742c45341ca04f91908a33cd870\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ef0c7f383b509b1f5b31397ceb4a0a1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ef0c7f383b509b1f5b31397ceb4a0a1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\db53b6aab1640af663bb145b822cff01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\db53b6aab1640af663bb145b822cff01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\0c5725f72867756175e106f8298d1181\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\0c5725f72867756175e106f8298d1181\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\2a5747584c177167a1befa9050b66c79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\2a5747584c177167a1befa9050b66c79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\3e6d56c7bb503e54cb03edaab5c208cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\3e6d56c7bb503e54cb03edaab5c208cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\44a198b3a4c2efb79fc6273b38b6a465\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\44a198b3a4c2efb79fc6273b38b6a465\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\611260751ce38ab335c2afcf4d034098\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\611260751ce38ab335c2afcf4d034098\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\24be08254a4cc7bbcd2ff1de0879b89e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\24be08254a4cc7bbcd2ff1de0879b89e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9fb39fc0cbb819d47bc8189d879d2952\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9fb39fc0cbb819d47bc8189d879d2952\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\df47f85da6cd82fab69e610be5b91b47\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\df47f85da6cd82fab69e610be5b91b47\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2edd13c690772f1f07309ca3717b39e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2edd13c690772f1f07309ca3717b39e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\3c156871fc80e2968f1f7d8f3e623718\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\3c156871fc80e2968f1f7d8f3e623718\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3f81782382eba75562de16c73c67c60a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3f81782382eba75562de16c73c67c60a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ab6f53fb085f1a3bb3bd86ffab3e5150\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ab6f53fb085f1a3bb3bd86ffab3e5150\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\c21a3218199d3bfd8d7003a2abaf4fe3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\c21a3218199d3bfd8d7003a2abaf4fe3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8a7cf2916ffec308413e5bc64d884e08\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8a7cf2916ffec308413e5bc64d884e08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\74a19ace81a6fa3c2fad4a5a796897c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\74a19ace81a6fa3c2fad4a5a796897c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\26abd52edf25ae03d0725cd205c84902\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\26abd52edf25ae03d0725cd205c84902\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\639b7e905ce6e21767354feb6bc1ede1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\639b7e905ce6e21767354feb6bc1ede1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\554b60186644a9ec6d1ec4e7a979cf80\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\554b60186644a9ec6d1ec4e7a979cf80\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\88b152fb9a89c2a00c26acd2b954fa4e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\88b152fb9a89c2a00c26acd2b954fa4e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\b8c668b1025dcc669f80de56344a17b7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\b8c668b1025dcc669f80de56344a17b7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\63558db2ccfc67e7bdc3345d186c4c5a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\63558db2ccfc67e7bdc3345d186c4c5a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\bd255502517b39fa10f1277174f769bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\pawma\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\bd255502517b39fa10f1277174f769bd\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pawma\Desktop\PanDa3App-master\PanDa3App-master\panda3\app\src\main\AndroidManifest.xml
