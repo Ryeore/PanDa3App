@@ -14,13 +14,15 @@ public class AddTaskActivity extends AppCompatActivity {
 
     DatabaseHelper mDatabaseHelper;
     private Button btnAdd, Back;
-    private EditText editText;
+    private EditText editText, editHour, editMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtask);
         editText = (EditText) findViewById(R.id.editText);
+        editHour = (EditText) findViewById(R.id.edit_hour);
+        editMinute = (EditText) findViewById(R.id.edit_minute);
         btnAdd = (Button) findViewById(R.id.btnAdd);
         Back = (Button) findViewById(R.id.Back);
         mDatabaseHelper = new DatabaseHelper(this);
@@ -32,8 +34,11 @@ public class AddTaskActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String newEntry = editText.getText().toString();
+                int item1 = Integer.parseInt(editHour.getText().toString());
+                int item2 = Integer.parseInt(editMinute.getText().toString());
+
                 if (editText.length() != 0) {
-                    AddData(newEntry, date);
+                    AddData(newEntry, date, item1, item2);
                     editText.setText("");
                 } else {
                     toastMessage("You must put something in the text field!");
@@ -51,8 +56,8 @@ public class AddTaskActivity extends AppCompatActivity {
 
     }
 
-    public void AddData(String newEntry, String date) {
-        boolean insertData = mDatabaseHelper.addData(newEntry, date);
+    public void AddData(String newEntry, String date, int hour, int minute) {
+        boolean insertData = mDatabaseHelper.addData(newEntry, date, hour, minute);
 
         if (insertData) {
             toastMessage("Data Successfully Inserted!");
