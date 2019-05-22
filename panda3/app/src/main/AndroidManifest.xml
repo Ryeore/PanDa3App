@@ -30,6 +30,9 @@
         <activity android:name=".AddTaskActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".EditTaskActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
