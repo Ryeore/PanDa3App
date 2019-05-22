@@ -21,37 +21,45 @@
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/my_toolbar"
-        android:layout_marginTop="58dp" />
+        android:layout_marginTop="58dp"
+        android:divider="@android:color/holo_green_light"
+        android:dividerHeight="5dp"
+        android:clickable="true"
+        android:choiceMode="singleChoice" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="500dp"
         android:text="go to date"
         android:textSize="30sp"/>
 
-    <Button
-        android:id="@+id/btnGoToTasks"
-        android:layout_width="wrap_content"
+    <LinearLayout
         android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:text="go to date"
-        android:textSize="30sp"/>
-    <Button
-        android:id="@+id/btnAddTask"
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
-        android:text="add task"
-        android:textSize="30sp"/>
+        android:weightSum="100"
+        android:layout_below="@+id/date">
+        <Button
+            android:id="@+id/btnGoToTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="calendar"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnGoToTasks"
+            android:text="add task"
+            android:textSize="10sp" />
+    </LinearLayout>
 
 
-    <!--<Button
+        <!--<Button
         android:id="@+id/Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
