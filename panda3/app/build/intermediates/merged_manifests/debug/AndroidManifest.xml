@@ -30,7 +30,14 @@
             android:name="com.example.panda3.AboutActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.example.panda3.AddTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.panda3.EditTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.example.panda3.MainActivity"
+            android:noHistory="true"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

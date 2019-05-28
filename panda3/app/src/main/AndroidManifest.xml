@@ -16,6 +16,7 @@
         <activity android:name=".NotesActivity"
             android:screenOrientation="portrait"/>
 
+
         <activity android:name=".TasksActivity"
             android:screenOrientation="portrait"/>
 
@@ -26,12 +27,18 @@
             android:name=".AboutActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".AddTaskActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".EditTaskActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
