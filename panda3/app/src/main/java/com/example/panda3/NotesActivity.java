@@ -63,7 +63,7 @@ public class NotesActivity extends AppCompatActivity {
 //                mlistView.setAdapter(listAdapter);
             }
             SimpleAdapter simpleAdapter = new SimpleAdapter(this,itemDataList,android.R.layout.simple_list_item_2,
-                    new String[]{"title","description"},new int[]{android.R.id.text1,android.R.id.text2});
+                    new String[]{"name","time"},new int[]{android.R.id.text1,android.R.id.text2});
             ListView listView = (ListView)findViewById(R.id.listView);
             listView.setAdapter(simpleAdapter);
         }

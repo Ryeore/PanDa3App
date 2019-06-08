@@ -38,7 +38,7 @@
         android:layout_height="2dp"
         android:layout_alignTop="@+id/textTask"
         android:background="#A5A4A4"
-        android:layout_marginTop="-5dp"
+        android:layout_marginTop="0dp"
         android:elevation="2.5dp"/>
 
     <ListView

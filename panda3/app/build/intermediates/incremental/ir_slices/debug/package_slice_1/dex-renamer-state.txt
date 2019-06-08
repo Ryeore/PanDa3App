@@ -1,4 +1,4 @@
-#Thu May 23 11:47:33 CEST 2019
+#Thu Jun 06 10:44:14 CEST 2019
 base.0=C\:\\Users\\Kamil\\Desktop\\panda3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.0=classes.dex
 renamed.0=classes.dex

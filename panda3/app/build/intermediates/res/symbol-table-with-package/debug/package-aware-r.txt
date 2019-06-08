@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array spinner
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -708,6 +709,7 @@ id content
 id contentPanel
 id custom
 id customPanel
+id data
 id date
 id decor_content_parent
 id default_activity_button
@@ -765,6 +767,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id relativeLayout1
+id req
 id right
 id right_icon
 id right_side
@@ -789,6 +792,7 @@ id showHome
 id showTitle
 id simpleCalendarView
 id spacer
+id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -819,6 +823,7 @@ id uniform
 id up
 id useLogo
 id withText
+id work
 id wrap
 id wrap_content
 integer abc_config_activityDefaultDur

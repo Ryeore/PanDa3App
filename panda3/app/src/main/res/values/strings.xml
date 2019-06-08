@@ -4,4 +4,11 @@
     <string name="calendar">calendar</string>
     <string name="notes">notes</string>
     <string name="tasks">tasks</string>
+
+    <string-array name="spinner">
+        <item>Dates</item>
+        <item>Work Structure</item>
+        <item>Thesis Requirements</item>
+    </string-array>
+
 </resources>
