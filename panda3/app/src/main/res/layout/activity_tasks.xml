@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/simpleCalendarView"
+        android:layout_below="@+id/simpleCalendarView"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-5dp"
         android:text="Tasks"
@@ -43,13 +43,28 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_below="@+id/simpleCalendarView"
+        android:layout_below="@+id/textTask"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@android:color/holo_green_light"
         android:dividerHeight="5dp"
         android:clickable="true"
         android:choiceMode="singleChoice" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddTask"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/a2"/>
 
 
 </RelativeLayout>

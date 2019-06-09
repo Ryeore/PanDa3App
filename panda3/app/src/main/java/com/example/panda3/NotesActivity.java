@@ -1,5 +1,6 @@
 package com.example.panda3;
 
+import java.util.Calendar;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -75,9 +76,11 @@ public class NotesActivity extends AppCompatActivity {
         theDate = (TextView) findViewById(R.id.date);
         //btnGoToTasks = (Button) findViewById(R.id.btnGoToTasks);
         btnAddTask = (ImageButton) findViewById(R.id.btnAddTask);
+        Calendar c = Calendar.getInstance();
+        final String date = c.get(Calendar.YEAR) + "/" + (c.get(Calendar.MONTH)+1) + "/" + c.get(Calendar.DAY_OF_MONTH);
+//        Intent incomingIntent = getIntent();
+//        final String date = incomingIntent.getStringExtra("date");
 
-        Intent incomingIntent = getIntent();
-        final String date = incomingIntent.getStringExtra("date");
         theDate.setText(date);
 
 /*        btnGoToTasks.setOnClickListener(new View.OnClickListener(){

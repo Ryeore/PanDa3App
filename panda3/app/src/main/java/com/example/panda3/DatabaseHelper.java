@@ -75,10 +75,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String query = "DELETE FROM " + TABLE_NAME + " WHERE "
                 + COL1 + " = '" + id + "'" +
                 " AND " + COL2 + " = '" + name +
-                " AND " + COL3 + " = '" + date +
-                " AND " + COL4 + " = '" + hour +
-                " AND " + COL5 + " = '" + minute +
-                "'";
+                "' AND " + COL3 + " = '" + date + "'"+
+                " AND " + COL4 + " = '" + hour + "'"+
+                " AND " + COL5 + " = '" + minute + "'";
         Log.d(TAG, "deleteName: query: " + query);
         Log.d(TAG, "deleteName: Deleting " + name + " from database.");
         db.execSQL(query);
@@ -91,27 +90,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return data;
     }
 
-    public void updateTask(String newName, int id, String oldName, int newHour, int oldHour, int newMinute, int oldMinute){
+    public void updateTask(String newName, int id, String oldName, int oldHour, int newHour, int oldMinute, int newMinute){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "UPDATE " + TABLE_NAME + " SET " + COL2 +
-                " = '" + newName + "' WHERE " + COL1 + " = '" + id + "'" +
-                " AND " + COL2 + " = '" + oldName + "'";
-        Log.d(TAG, "updateName: query: " + query);
-        Log.d(TAG, "updateName: Setting name to " + newName);
-        db.execSQL(query);
-
-        query = "UPDATE " + TABLE_NAME + " SET " + COL4 +
-                " = '" + newHour + "' WHERE " + COL1 + " = '" + id + "'" +
-                " AND " + COL4 + " = '" + oldHour + "'";
-        Log.d(TAG, "updateHour: query: " + query);
-        Log.d(TAG, "updateHour: Setting Hour to " + newHour);
-        db.execSQL(query);
-
-        query = "UPDATE " + TABLE_NAME + " SET " + COL5 +
+                " = '" + newName + "', "
+                + COL4 +
+                " = '" + newHour + "', " +
+                 COL5 +
                 " = '" + newMinute + "' WHERE " + COL1 + " = '" + id + "'" +
-                " AND " + COL5 + " = '" + oldMinute + "'";
-        Log.d(TAG, "updateHour: query: " + query);
-        Log.d(TAG, "updateHour: Setting Hour to " + newMinute);
+                " AND " + COL2 + " = '" + oldName + "'" +
+                " AND " + COL4 + " = '" + oldHour + "'" +
+                " AND " + COL5 + " = '" + oldMinute + "'" ;
+        Log.d(TAG, "updateName: query: " + query);
         db.execSQL(query);
 
     }

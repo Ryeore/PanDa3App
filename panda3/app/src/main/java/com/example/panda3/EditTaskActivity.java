@@ -56,13 +56,13 @@ public class EditTaskActivity extends AppCompatActivity {
         selectedHour = receivedIntent.getIntExtra("hour",-1);
 
         //set the text to show the current selected hour
-        hour_item.setText(selectedHour);
+//        hour_item.setText(selectedHour);
 
         //now get the minute we passed as an extra
         selectedMinute = receivedIntent.getIntExtra("minute",-1);
 
         //set the text to show the current selected minute
-        minute_item.setText(selectedMinute);
+//        minute_item.setText(selectedMinute);
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +73,7 @@ public class EditTaskActivity extends AppCompatActivity {
                 if(!item.equals("")){
                     mDatabaseHelper.updateTask(item,selectedID,selectedName, selectedHour, item1, selectedMinute, item2);
                 }else{
-                    toastMessage("You must enter a name");
+                    toastMessage("You must enter a name!");
                 }
             }
         });
@@ -81,9 +81,11 @@ public class EditTaskActivity extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try{
                 mDatabaseHelper.deleteTask(selectedID,selectedName, selectedDate, selectedHour, selectedMinute);
                 editable_item.setText("");
-                toastMessage("removed from database");
+                toastMessage("removed from database");}
+                catch (Exception e) {toastMessage("something went wrong");}
             }
         });
 
