@@ -79,7 +79,11 @@ public class TasksActivity extends AppCompatActivity {
 
                         Map<String,Object> listItemMap = new HashMap<String,Object>();
                         listItemMap.put("name", data.getString(1));
-                        listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
+                        String minutes = data.getString(4);
+                        if (minutes.length()<2){
+                            minutes = '0' + minutes;
+                        }
+                        listItemMap.put("time", data.getString(3) + ":" + minutes);
                         itemDataList.add(listItemMap);
                     }
                     SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,
@@ -103,7 +107,11 @@ public class TasksActivity extends AppCompatActivity {
             while(data.moveToNext()){
                 Map<String,Object> listItemMap = new HashMap<String,Object>();
                 listItemMap.put("name", data.getString(1));
-                listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
+                String minutes = data.getString(4);
+                if (minutes.length()<2){
+                    minutes = '0' + minutes;
+                }
+                listItemMap.put("time", data.getString(3) + ":" + minutes);
                 itemDataList.add(listItemMap);
             }
             SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,

@@ -31,9 +31,6 @@ public class NotesActivity extends AppCompatActivity {
 
     private static final String TAG = "NotesActivity";
 
-    private TextView theDate;
-    //private Button btnGoToTasks;
-    private ImageButton btnAddTask;
 
 
     DatabaseHelper myDB;
@@ -43,27 +40,26 @@ public class NotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
 
-//        ListView mlistView = (ListView) findViewById(R.id.listView);
-        myDB = new DatabaseHelper(this);
-
-//        ArrayList<String> theList = new ArrayList<>();
-//        ArrayList<String> theList1 = new ArrayList<>();
+        myDB = new DatabaseHelper(getApplicationContext());
         Cursor data = myDB.getData();
         ArrayList<Map<String,Object>> itemDataList = new ArrayList<Map<String,Object>>();;
         if(data.getCount() == 0){
-            Toast.makeText(this, "There are no contents in this list!",Toast.LENGTH_LONG).show();
+            SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,
+                    new String[]{"name","time"},new int[]{android.R.id.text1,android.R.id.text2});
+            ListView listView = (ListView)findViewById(R.id.listView);
+            listView.setAdapter(simpleAdapter);
         }else{
             while(data.moveToNext()){
-//                theList.add(data.getString(1));
-//                theList1.add(data.getString(3) + ":" + data.getString(4));
                 Map<String,Object> listItemMap = new HashMap<String,Object>();
                 listItemMap.put("name", data.getString(1));
-                listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
+                String minutes = data.getString(4);
+                if (minutes.length()<2){
+                    minutes = '0' + minutes;
+                }
+                listItemMap.put("time", data.getString(3) + ":" + minutes + " date: " + data.getString(2));
                 itemDataList.add(listItemMap);
-//                ListAdapter listAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,theList);
-//                mlistView.setAdapter(listAdapter);
             }
-            SimpleAdapter simpleAdapter = new SimpleAdapter(this,itemDataList,android.R.layout.simple_list_item_2,
+            SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,
                     new String[]{"name","time"},new int[]{android.R.id.text1,android.R.id.text2});
             ListView listView = (ListView)findViewById(R.id.listView);
             listView.setAdapter(simpleAdapter);
@@ -73,34 +69,11 @@ public class NotesActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        theDate = (TextView) findViewById(R.id.date);
-        //btnGoToTasks = (Button) findViewById(R.id.btnGoToTasks);
-        btnAddTask = (ImageButton) findViewById(R.id.btnAddTask);
         Calendar c = Calendar.getInstance();
         final String date = c.get(Calendar.YEAR) + "/" + (c.get(Calendar.MONTH)+1) + "/" + c.get(Calendar.DAY_OF_MONTH);
 //        Intent incomingIntent = getIntent();
 //        final String date = incomingIntent.getStringExtra("date");
 
-        theDate.setText(date);
-
-/*        btnGoToTasks.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                finish();
-                Intent intent = new Intent(NotesActivity.this, TasksActivity.class);
-                startActivity(intent);
-            }
-                                        }*/
-
-        btnAddTask.setOnClickListener(new View.OnClickListener(){
-                                            @Override
-                                            public void onClick(View view){
-                                                Intent intent = new Intent(NotesActivity.this, AddTaskActivity.class);
-                                                intent.putExtra("date", date);
-                                                startActivity(intent);
-                                            }
-                                        }
-        );
 
 //        mlistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
