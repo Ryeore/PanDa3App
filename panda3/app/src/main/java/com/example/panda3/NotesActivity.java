@@ -140,9 +140,11 @@ public class NotesActivity extends AppCompatActivity {
 
             case R.id.action_calendar:
                 startActivity(new Intent(NotesActivity.this, TasksActivity.class));
+                finish();
                 return true;
 
             case R.id.action_about:
+                finish();
                 startActivity(new Intent(NotesActivity.this, AboutActivity.class));
                 return true;
 
@@ -165,6 +167,10 @@ public class NotesActivity extends AppCompatActivity {
     }*/
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 
 }

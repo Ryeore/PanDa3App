@@ -168,10 +168,12 @@ public class TasksActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_notes:
                 startActivity(new Intent(TasksActivity.this, NotesActivity.class));
+                finish();
                 return true;
 
             case R.id.action_about:
                 startActivity(new Intent(TasksActivity.this, AboutActivity.class));
+                finish();
                 return true;
 
             default:

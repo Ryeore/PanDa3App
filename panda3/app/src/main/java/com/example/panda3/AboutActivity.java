@@ -79,10 +79,12 @@ public class AboutActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_notes:
                 startActivity(new Intent(AboutActivity.this, NotesActivity.class));
+                finish();
                 return true;
 
             case R.id.action_calendar:
                 startActivity(new Intent(AboutActivity.this, TasksActivity.class));
+                finish();
                 return true;
 
 
@@ -99,6 +101,10 @@ public class AboutActivity extends AppCompatActivity {
 
         }
     }*/
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 
 
 }
