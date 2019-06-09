@@ -24,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String SQL_CREATE_ENTRIES = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT, " +
+        String SQL_CREATE_ENTRIES = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT , " + COL3 + " TEXT, " +
                 COL4 + " INT CHECK(" + COL4 + " < 25 AND " + COL4 + " > 0), " + COL5 + " INT CHECK(" + COL5 + " < 60 AND " + COL5 + " >= 0))";
         db.execSQL(SQL_CREATE_ENTRIES);
     }
@@ -57,34 +57,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
     }
+
+    public boolean freeName(String name, String date) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_NAME +
+                " WHERE " + COL2 + " = '" + name + "'"
+                + " AND " + COL3 + " = '" + date + "'";
+        Cursor data = db.rawQuery(query, null);
+        int result = data.getCount();
+        //if date as inserted incorrectly it will return -1
+        if (result == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TABLE_NAME;
+        String query = "SELECT * FROM " + TABLE_NAME + " ORDER BY " + COL4 + ", " + COL5;
         Cursor data = db.rawQuery(query, null);
         return data;
     }
-    public Cursor getItemsID(String date){
+    public Cursor getItemsByDate(String date){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT " + COL1 + " FROM " + TABLE_NAME +
-                " WHERE " + COL3 + " = '" + date + "'";
+        String query = "SELECT * FROM " + TABLE_NAME +
+                " WHERE " + COL3 + " = '" + date + "' "
+                + " ORDER BY " + COL4 + ", " + COL5;
         Cursor data = db.rawQuery(query, null);
         return data;
     }
-    public void deleteTask(int id, String name, String date, int hour, int minute){
+    public void deleteTask(int id, String name, String date){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "DELETE FROM " + TABLE_NAME + " WHERE "
                 + COL1 + " = '" + id + "'" +
                 " AND " + COL2 + " = '" + name +
-                "' AND " + COL3 + " = '" + date + "'"+
-                " AND " + COL4 + " = '" + hour + "'"+
-                " AND " + COL5 + " = '" + minute + "'";
+                "' AND " + COL3 + " = '" + date + "'";
         Log.d(TAG, "deleteName: query: " + query);
         Log.d(TAG, "deleteName: Deleting " + name + " from database.");
         db.execSQL(query);
     }
-    public Cursor getItemID(String name){
+    public Cursor getItemsByName(String name){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT " + COL1 + " FROM " + TABLE_NAME +
+        String query = "SELECT * FROM " + TABLE_NAME +
                 " WHERE " + COL2 + " = '" + name + "'";
         Cursor data = db.rawQuery(query, null);
         return data;

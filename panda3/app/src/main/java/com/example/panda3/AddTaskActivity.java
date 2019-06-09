@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.TimePicker;
 
 public class AddTaskActivity extends AppCompatActivity {
 
@@ -14,16 +16,16 @@ public class AddTaskActivity extends AppCompatActivity {
 
     DatabaseHelper mDatabaseHelper;
     private Button btnAdd;
-    private EditText editText, editHour, editMinute;
+    private EditText editText;
+    private TimePicker timePicker1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtask);
         editText = (EditText) findViewById(R.id.editText);
-        editHour = (EditText) findViewById(R.id.edit_hour);
-        editMinute = (EditText) findViewById(R.id.edit_minute);
         btnAdd = (Button) findViewById(R.id.btnAdd);
+        timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
 
         mDatabaseHelper = new DatabaseHelper(this);
 
@@ -34,11 +36,11 @@ public class AddTaskActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String newEntry = editText.getText().toString();
-                int item1 = Integer.parseInt(editHour.getText().toString());
-                int item2 = Integer.parseInt(editMinute.getText().toString());
-
-                if (editText.length() != 0) {
-                    AddData(newEntry, date, item1, item2);
+                if(!mDatabaseHelper.freeName(editText.getText().toString(),date)){
+                    toastMessage("There is task named like this in this day!");
+                }
+                else if (editText.length() != 0) {
+                    AddData(newEntry, date, timePicker1.getHour(), timePicker1.getMinute());
                     editText.setText("");
                 } else {
                     toastMessage("You must put something in the text field!");
@@ -55,13 +57,18 @@ public class AddTaskActivity extends AppCompatActivity {
         if (insertData) {
             toastMessage("Data Successfully Inserted!");
         } else {
-            toastMessage("Something went wrong");
+            toastMessage("There is task with this name");
         }
     }
 
 
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+    public void onBackPressed() {
+        Intent intent = new Intent(AddTaskActivity.this, TasksActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 }

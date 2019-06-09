@@ -16,16 +16,26 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginTop="40dp"
+        android:text="name:"/>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout1">
+        android:id="@+id/relativeLayout1"
+        android:layout_below="@+id/name">
         <EditText
-            android:layout_marginTop="150dp"
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:id="@+id/editText"/>
+            android:id="@+id/editText"
+            android:layout_marginBottom="100px"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -37,25 +47,10 @@
         android:layout_below="@+id/relativeLayout1"
         >
 
-        <TextView
+        <TimePicker
+            android:id="@+id/timePicker1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hour/minute"/>
-
-        <EditText
-            android:textAlignment="center"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_alignParentTop="true"
-            android:id="@+id/edit_hour"/>
-        <EditText
-            android:textAlignment="center"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_alignParentTop="true"
-            android:id="@+id/edit_minute"/>
+            android:layout_height="wrap_content"></TimePicker>
 
     </LinearLayout>
 

@@ -7,19 +7,29 @@
 
 
     <TextView
+        android:id="@+id/task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="85dp"
-        android:text="task"/>
+        android:textSize="100px"
+        android:text="TASK"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/task"
+        android:text="name:"/>
     <EditText
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_alignParentTop="true"
+        android:textSize="80px"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_below="@+id/name"
         android:id="@+id/editable_item"/>
     <LinearLayout
         android:layout_centerHorizontal="true"
@@ -29,26 +39,31 @@
         android:id="@+id/hour_minute"
         android:layout_below="@+id/editable_item"
         >
-
-        <TextView
+        
+        <TimePicker
+            android:id="@+id/timePicker1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hour/minute"/>
+            android:layout_height="wrap_content"></TimePicker>
+        
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="hour/minute"/>-->
 
-        <EditText
-            android:textAlignment="center"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_alignParentTop="true"
-            android:id="@+id/edit_hour"/>
-        <EditText
-            android:textAlignment="center"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_alignParentTop="true"
-            android:id="@+id/edit_minute"/>
+        <!--<EditText-->
+            <!--android:textAlignment="center"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:id="@+id/edit_hour"/>-->
+        <!--<EditText-->
+            <!--android:textAlignment="center"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:id="@+id/edit_minute"/>-->
 
     </LinearLayout>
     <LinearLayout

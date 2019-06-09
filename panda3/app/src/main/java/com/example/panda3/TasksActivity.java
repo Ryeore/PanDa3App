@@ -55,6 +55,7 @@ public class TasksActivity extends AppCompatActivity {
         mCalendarView = (CalendarView) findViewById(R.id.simpleCalendarView);
 
         mCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            //        refresh list after changing date on calendar
             @Override
             public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
                 String date = year + "/" + (month+1) + "/" + dayOfMonth;
@@ -64,19 +65,22 @@ public class TasksActivity extends AppCompatActivity {
                 Log.d(TAG, "onSelectDayChange date: " + date);
 
                 myDB = new DatabaseHelper(getApplicationContext());
-                Cursor data = myDB.getData();
+                Cursor data = myDB.getItemsByDate(calendarDate.clicked);
 
                 ArrayList<Map<String,Object>> itemDataList = new ArrayList<Map<String,Object>>();;
                 if(data.getCount() == 0){
-                    Toast.makeText(getApplicationContext(), "There are no contents in this list!",Toast.LENGTH_LONG).show();
+                    SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,
+                            new String[]{"name","time"},new int[]{android.R.id.text1,android.R.id.text2});
+                    ListView listView = (ListView)findViewById(R.id.listView);
+                    listView.setAdapter(simpleAdapter);
                 }else{
                     while(data.moveToNext()){
                         Log.d(TAG, "onSelectDayChange date comparison: " + date + " database: " + data.getString(2) + " result " + (data.getString(2).equals(date)));
-                        if(data.getString(2).equals(date)){
-                            Map<String,Object> listItemMap = new HashMap<String,Object>();
-                            listItemMap.put("name", data.getString(1));
-                            listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
-                            itemDataList.add(listItemMap);}
+
+                        Map<String,Object> listItemMap = new HashMap<String,Object>();
+                        listItemMap.put("name", data.getString(1));
+                        listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
+                        itemDataList.add(listItemMap);
                     }
                     SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,
                             new String[]{"name","time"},new int[]{android.R.id.text1,android.R.id.text2});
@@ -86,38 +90,39 @@ public class TasksActivity extends AppCompatActivity {
             }
 
         });
+//        Display list onCreate
         Calendar c = Calendar.getInstance();
         calendarDate.clicked = c.get(Calendar.YEAR) + "/" + (c.get(Calendar.MONTH)+1) + "/" + c.get(Calendar.DAY_OF_MONTH);
         myDB = new DatabaseHelper(getApplicationContext());
-        Cursor data = myDB.getData();
+        Cursor data = myDB.getItemsByDate(calendarDate.clicked);
         ListView listView = (ListView)findViewById(R.id.listView);
         final ArrayList<Map<String,Object>> itemDataList = new ArrayList<Map<String,Object>>();
         if(data.getCount() == 0){
             Toast.makeText(getApplicationContext(), "There are no contents in this list!",Toast.LENGTH_LONG).show();
         }else{
             while(data.moveToNext()){
-                if(data.getString(2).equals(calendarDate.clicked)){
-                    Map<String,Object> listItemMap = new HashMap<String,Object>();
-                    listItemMap.put("name", data.getString(1));
-                    listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
-                    itemDataList.add(listItemMap);}
+                Map<String,Object> listItemMap = new HashMap<String,Object>();
+                listItemMap.put("name", data.getString(1));
+                listItemMap.put("time", data.getString(3) + ":" + data.getString(4));
+                itemDataList.add(listItemMap);
             }
             SimpleAdapter simpleAdapter = new SimpleAdapter(getApplicationContext(),itemDataList,android.R.layout.simple_list_item_2,
                     new String[]{"name","time"},new int[]{android.R.id.text1,android.R.id.text2});
 
             listView.setAdapter(simpleAdapter);
         }
-
+// go to add item screen
         btnAddTask.setOnClickListener(new View.OnClickListener(){
                                           @Override
                                           public void onClick(View view){
                                               Intent intent = new Intent(TasksActivity.this, AddTaskActivity.class);
                                               intent.putExtra("date", calendarDate.clicked);
                                               startActivity(intent);
+                                              finish();
                                           }
                                       }
         );
-
+// go to edit item screen if clicked item is valid
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int index, long l) {
@@ -126,18 +131,13 @@ public class TasksActivity extends AppCompatActivity {
                 String[] fullname = object.split(", ");
                 String[] name = fullname[0].split("=");
                 Log.d(TAG, "onItemClick: You Clicked on " + name[1]);
-                Cursor data = myDB.getData();
-                int ID = -1, min=0, hour=0;
-                while(data.moveToNext()){
-                    if(data.getString(1).equals(name[1])){
-                        ID=data.getInt(0);
-                        min=data.getInt(4);
-                        hour=data.getInt(3);
-                        break;
-                    }
-                }
+                Cursor data = myDB.getItemsByName(name[1]);
+                data.moveToNext();
+                int ID = data.getInt(0);
+                int hour = data.getInt(3);
+                int min = data.getInt(4);
                 try{
-//                    Cursor data = myDB.getItemID(name[1]); //get the id associated with that name
+
                     Log.d(TAG, "onItemClick: database ID " + ID);
                     if(ID>-1){
                         Log.d(TAG, "onItemClick: The ID is: " + ID);
@@ -147,7 +147,8 @@ public class TasksActivity extends AppCompatActivity {
                         editScreenIntent.putExtra("date",calendarDate.clicked);
                         editScreenIntent.putExtra("hour",hour);
                         editScreenIntent.putExtra("minute",min);
-                        startActivity(editScreenIntent);}}
+                        startActivity(editScreenIntent);
+                        finish();}}
                 catch (Exception e){Log.d(TAG, "onItemClick: something went wrong");}
 
 
