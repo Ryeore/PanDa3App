@@ -1,7 +1,0 @@
-#Thu Jun 06 12:15:06 CEST 2019
-base.0=C\:\\Users\\Kamil\\Desktop\\panda3\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=C\:\\Users\\Kamil\\Desktop\\panda3\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
